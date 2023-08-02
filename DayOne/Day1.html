@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fiona DeMendonca</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         <figcaption>Picture of Roosevelt Island tram</figcaption>
     </figure>
 
-    <h1>Picture tag</h1>
+    <h1 id="picTag">Picture tag</h1>
     <p>Resize the browser window to load different photos of NYC</p>
     <picture>
         <source media="(min-width:1100px)" srcset="images/EmpireStateBuilding.jpg">
@@ -34,16 +34,16 @@
     <p><a href="mailto:example@mail.com">Email to Me</a></p>
     <p>Follow us:</p>
     <figure>
-        <a href="https://www.tiktok.com/qcc_cuny" target="_blank" rel="noopener noreferrer">
-            <img src="" alt="tiktok logo" width="20%">
+        <a href="https://www.tiktok.com/@qcc_cuny" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/ios-filled/50/tiktok--v1.png" alt="tiktok logo" width="20%">
         </a>
 
         <a href="https://www.twitter.com/qcc_cuny" target="_blank" rel="noopener noreferrer">
-            <img src="" alt="Twitter logo" width="20%">
+            <img src="https://img.icons8.com/ios-filled/150/twitter.png" alt="Twitter logo" width="20%">
         </a>
     </figure>
 
-    <h1>Link to a specific part of the same web page</h1>
+    <h1 id="links">Link to a specific part of the same web page</h1>
     <ul>
         <li>
             <a href="#">Top of page</a>
@@ -54,15 +54,18 @@
         <li>
             <a href="#links">Links</a>
         </li>
+        <li>
+            <a href="tel:+7180008888">Call (718)-000-8888</a>
+        </li>
     </ul>
 
     <h1>Map tag</h1>
     <figure>
-        <img src="" width="500px" usemap="#nyc">
+        <img src="images/BrooklynBridge.jpg" width="500px" usemap="#nyc">
     </figure>
     <map name="nyc">
         <area shape="rect" coords="300px, 20px,350px,170px"
-            href="http://en.wikipedia.org/wiki/Liberty_Tower_(Manhattan)" target="_blank" rel="noopener noreferrer">
+            href="https://en.wikipedia.org/wiki/Liberty_Tower_(Manhattan)" target="_blank" rel="noopener noreferrer">
 
         <area shape="circle" coords="100px,210px,30px"
             href="https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations" target="_blank"
