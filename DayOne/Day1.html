@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Images in HTML</h1>
+    <p>Add images into a webpage</p>
+    <img src="images/tram.jpg" alt="Roosevelt Island tram" title="Visit Roosevelt Island" width="50%">
+
+    <figure>
+        <img src="images/tram.jpg" alt="Roosevelt Island tram" title="Visit Roosevelt Island" width="100%">
+        <img src="images/tram.jpg" alt="Roosevelt Island tram" title="Visit Roosevelt Island" width="49%">
+        <img src="images/tram.jpg" alt="Roosevelt Island tram" title="Visit Roosevelt Island" width="49%">
+        <figcaption>Picture of Roosevelt Island tram</figcaption>
+    </figure>
+
+    <h1>Picture tag</h1>
+    <p>Resize the browser window to load different photos of NYC</p>
+    <picture>
+        <source media="(min-width:1100px)" srcset="images/EmpireStateBuilding.jpg">
+        <source media="(min-width:800px)" srcset="images/StatueLiberty.jpg">
+        <source media="(min-width:500px)" srcset="images/TimesSquare.jpg">
+        <img src="images/BrooklynBridge.jpg" alt="Brooklyn Bridge" width="60%">
+    </picture>
+
+    <!-- LINKS -->
+    <h1>Link to other sites</h1>
+    <a href="https://www.qcc.cuny.edu" target="_blank" rel="noopener noreferrer">Visit QCC Website</a>
+    <p><a href="mailto:example@mail.com">Email to Me</a></p>
+    <p>Follow us:</p>
+    <figure>
+        <a href="https://www.tiktok.com/qcc_cuny" target="_blank" rel="noopener noreferrer">
+            <img src="" alt="tiktok logo" width="20%">
+        </a>
+
+        <a href="https://www.twitter.com/qcc_cuny" target="_blank" rel="noopener noreferrer">
+            <img src="" alt="Twitter logo" width="20%">
+        </a>
+    </figure>
+
+    <h1>Link to a specific part of the same web page</h1>
+    <ul>
+        <li>
+            <a href="#">Top of page</a>
+        </li>
+        <li>
+            <a href="#picTag">Picture Tag</a>
+        </li>
+        <li>
+            <a href="#links">Links</a>
+        </li>
+    </ul>
+
+    <h1>Map tag</h1>
+    <figure>
+        <img src="" width="500px" usemap="#nyc">
+    </figure>
+    <map name="nyc">
+        <area shape="rect" coords="300px, 20px,350px,170px"
+            href="http://en.wikipedia.org/wiki/Liberty_Tower_(Manhattan)" target="_blank" rel="noopener noreferrer">
+
+        <area shape="circle" coords="100px,210px,30px"
+            href="https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations" target="_blank"
+            rel="noopener noreferrer">
+    </map>
+    <hr>
+    <footer>
+        Day 1: HTML review @ Fiona DeMendonca
+    </footer>
+
+
+</body>
+
+</html>
