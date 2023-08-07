@@ -82,11 +82,11 @@ function greet(firstName, lastName) {
     console.log(`Hello ${firstName} ${lastName[0].toUpperCase()}`)
 }
 
-function doubleNumber(number) {
-    console.log("---Example 9---")
-    number *= 2
-    return number
-}
+// function doubleNumber(number) {
+//     console.log("---Example 9---")
+//     number *= 2
+//     return number
+// }
 
 // ---Class Activity---
 // When function is called and the user doesn't enter an argument, number as argument, the program will ask the user to enter a number. the function willfully run when the user enters an argument
@@ -94,4 +94,17 @@ function doubleNumber(number) {
 function doubleNumber(number) {
     console.log("Class Activity - Modify code")
 
+    let inputNum = parseInt(prompt("Enter a number between 1 and 100"))
+    let checkInputNum = isNaN(inputNum)
+
+    if (inputNum === "" || inputNum === null || checkInputNum == true)
+        while (checkInputNum) {
+            inputNum = parseInt(prompt("You did not enter a number. Try again"))
+            checkInputNum = isNaN(inputNum)
+        } else {
+        number = inputNum * 2;
+        console.log(number)
+    }
 }
+
+doubleNumber()
