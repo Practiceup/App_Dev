@@ -8,7 +8,8 @@ img {
     height: 100%;
 }
 
-.setOne {
+.setOne,
+.setTwo {
     display: flex;
     width: 90%;
     margin: 2em auto;
@@ -73,29 +74,17 @@ img {
 
 /* Second set of images */
 .imgCardContent2 {
-    /* position: absolute; */
-    top: 0;
     text-align: left;
-    height: max-content;
-    width: max-content;
+    /* height: max-content; */
+    /* width: max-content; */
     border-radius: 2px;
+    text-align: center;
 }
-
-/* .setTwo {
-    display: flex;
-    width: 90%;
-    margin: 2em auto;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-} */
-
-
 
 /* RWD */
 @media screen and (max-width: 1000px) {
     .imgCard {
         width: 45%;
-        /*have 2 cards in a row*/
     }
 }
 
