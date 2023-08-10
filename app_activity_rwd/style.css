@@ -1,0 +1,120 @@
+body {
+    background-color: #dbf2ff;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.setOne {
+    display: flex;
+    width: 90%;
+    margin: 2em auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imgCard,
+.intro {
+    width: 45%;
+    margin-bottom: 3em;
+    box-shadow: 1px 1px 5px rgb(100, 100, 100);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 2px 2px #e89500;
+}
+
+.intro {
+    width: 100%;
+}
+
+.imgCardContent3 {
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+    text-align: center
+}
+
+.imgCardContent {
+    position: absolute;
+    top: 0;
+    text-align: left;
+    background-color: rgba(40, 27, 134, 0.6);
+    height: max-content;
+    width: max-content;
+    border-radius: 2px;
+}
+
+.p1_imgCardContent {
+    color: #d98c00;
+    font-size: 2em;
+    font-weight: bolder;
+    margin-top: 0.2em;
+    margin-left: 0.2em;
+}
+
+.p2_imgCardContent {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    margin-top: -2em;
+    margin-left: 0.6em;
+    color: white;
+}
+
+.p1_imgCardContent2 {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Second set of images */
+.imgCardContent2 {
+    /* position: absolute; */
+    top: 0;
+    text-align: left;
+    height: max-content;
+    width: max-content;
+    border-radius: 2px;
+}
+
+/* .setTwo {
+    display: flex;
+    width: 90%;
+    margin: 2em auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+} */
+
+
+
+/* RWD */
+@media screen and (max-width: 1000px) {
+    .imgCard {
+        width: 45%;
+        /*have 2 cards in a row*/
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .imgCard {
+        width: 70%;
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        text-align: center;
+        font-size: 1.5em;
+        color: #c90041;
+    }
+
+    .imgCard {
+        width: 100%;
+    }
+
+}
