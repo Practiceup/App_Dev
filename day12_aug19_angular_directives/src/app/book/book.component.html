@@ -1,0 +1,41 @@
+<h1>Angular Directive</h1>
+<h2>ngIf Directive</h2>
+<p *ngIf="model.getBooks().length > 0">
+  There are {{ model.getBooks().length }} books in stock
+</p>
+<p *ngIf="model.getBooks().length == 0">Books sold out!</p>
+
+<h2>[hidden] property</h2>
+<!-- Hides if true -->
+<p [hidden]="model.getBooks().length == 0">
+  There are {{ model.getBooks().length }} books in stock
+</p>
+<p [hidden]="model.getBooks().length != 0">There aren't any books in stock</p>
+
+<h2>ngSwitch Directive</h2>
+<div [ngSwitch]="model.getBooks().length">
+  <span *ngSwitchCase="0">There AREN'T any books in stock</span>
+  <span *ngSwitchCase="1">There is ONE book in stock</span>
+  <span *ngSwitchCase="2">There are TWO books in stock</span>
+  <span *ngSwitchCaseDefault>There are MORE THAN TWO books in stock</span>
+</div>
+
+<h2>ngFor Directive</h2>
+<div *ngFor="let book of model.getBooks(); index as i">
+  <p>
+    Book {{ i + 1 }}: <em>{{ book.name }}</em
+    >-------<b style="color: blueviolet;">${{ book.price }}</b>
+  </p>
+  <button (click)="deleteBook(book)">Remove book {{ i + 1 }}</button>
+  <button (click)="updateName(book)">Update name</button>
+  <button (click)="updatePrice(book)">Update price</button>
+</div>
+
+<h2>Custom Directive</h2>
+<label
+  >Enter an email address:
+  <input type="text" appEmail />
+</label>
+
+<!-- <h2>Change Directive</h2>
+<button (click)="addBook()">Add Book!</button> -->
